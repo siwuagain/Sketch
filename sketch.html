@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketchpad</title>
+  <link rel="stylesheet" href="sketch.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title">Sketching Lab</h1>
+
+  <div id="page-display">
+    
+    <div id="canvas-container">
+      <img class="blank-canvas-background" src="images/blank-canvas.ong.png">
+      <div id="container"></div>
+
+      <div class="eraser-slider-columns-container">
+        <form id="eraser-slider-form">
+        <input type="range" min="0" max="" value="0" class="slider" id="eraser-slider-columns">
+        </form>
+      </div>
+    </div>
+
+    <div id="tools">
+
+      <div class="slide-container">
+        <input type="range" min="1" max="100" value="50" class="slider" id="grid-size-slider">
+        <div id="grid-size-display"></div>
+      </div>
+
+      <div id="mode-options">
+        <button class="button" id="start-over-btn">Start Over</button>
+        
+        <div>
+          <label id="color-picker">Pick a Color:</label>
+          <input type="color" id="color-picker-btn" value="#000000">
+        </div>
+        <button class="button" id="eraser-btn">Eraser</button>
+
+        <button class="button" id="random-colors-btn">ColoRandom</button>
+        
+        <button class="button" id="shading-btn">Shading</button>
+
+        <button class="button" id="brighten-btn">Brighten</button>
+      </div>
+
+    </div>
+
+    <div id="description-tool">
+      <img id="paper-scroll" src="images/paper scroll.png">
+      <div id="info-guide">Information Guide</div>
+      <div id="info"></div>
+    </div>
+  </div>
+  
+  <script src="sketch.js"></script>
+
+</body>
+
+
+
+</html>
