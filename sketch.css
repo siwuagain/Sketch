@@ -6,7 +6,6 @@ body {
 
 .title {
   text-align: center;
-  
 }
 
 #page-display {
@@ -124,10 +123,7 @@ body {
   margin-top: 200px;
   height: fit-content;
   width: 300px;
-  
 }
-
-
 
 #mode-options {
   height: 500px;
@@ -135,7 +131,6 @@ body {
   row-gap: 20px;
   display: grid;
   margin-left: 70px;
-  
 }
 
 .button {
@@ -150,7 +145,6 @@ body {
   box-shadow: 1px 1px 1px;
 }
 
-
 #start-over-btn {
   margin-bottom: 40px;
 }
@@ -163,7 +157,6 @@ body {
 #color-picker-btn {
   height: 50px;
   width: 155px;
-
 }
 
 /* information textbox css */
@@ -173,7 +166,6 @@ body {
   margin-top: 200px;
   height: 650px;
   width: 300px;
-
 }
 
 #paper-scroll {
@@ -200,3 +192,43 @@ body {
 }
 
 
+@media (max-width: 1170px) {
+  #page-display {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #description-tool,
+  #tools {
+    margin-top: 50px;
+  }
+}
+
+
+@media (min-width: 1171px) and (max-width: 1700px){
+  #page-display {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    justify-items: center;
+  }
+  #description-tool {
+    margin-top: 0px;
+    grid-template-columns: subgrid ;
+    grid-column: 2/-1;
+  }
+}
+
+/* JS related */
+
+.blank-cell {
+  min-width: 0;
+  min-height: 0;
+  border-color:rgb(245, 245, 245);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.clicked {
+  scale: 0.90;
+  box-shadow: inset 1px 3px 5px;
+}
